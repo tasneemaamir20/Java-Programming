@@ -1,0 +1,122 @@
+STRING
+
+STRING IS A NON PRIMITIVE DATATYPE (i.e. USER DEFINED).
+
+WHENEVER YOU CREATE A VARIABLE OF STRING DATATYPE A NEW OBJECT IS CREATED INSIDE THE HEAP AREA.
+
+IF YOU CREATE A STRING CLASS OBJECT WITHOUT USING 'NEW' KEYWORD THE OBJECT IS CREATED INSIDE THE 'STRING CONSTANT POOL' IN HEAP AREA.
+
+IF YOU CREATE A STRING CLASS OBJECT USING 'NEW' KEYWORD THE OBJECT IS CREATED INSIDE THE HEAP AREA BUT NOT INSIDE THE 'STRING CONSTANT POOL'.
+
+IF YOU TRY TO MODIFY THE OBJECTS OF STRING CLASS, NOTHING BUT YOU WILL END-UP CREATING A NEW OBJECT. (YOU WILL FIND THAT THE ADDRESS OF THAT OBJECT GET CHANGED. IT IS NOTHING BUT THE ADDRESS OF NEWLY CREATED OBJECT(OF STRING CLASS) IS ASSIGNED TO THE VARIABLE AND THE OLD OBJECT WILL LATER AUTOMATICALLY GET COLLECTED BY THE GARBAGE COLLECTOR AND DISCARDED/DUMPED/DESTRUCTED)
+
+
+
+
+
+
+BY NIMISHA MA'AM.
+
+ANYTHING ENCLOSED IN DOUBLE QUOTES IS KNOWN AS STRING LITERALS.
+
+CHARACTERSTICS:
+
+1. WHEN WE USE STRING LITERALS IN OUR PROGRAM AN OBJECT OF STRING CLASS IS CREATED IN 'STRING CONSTANT POOL'
+
+2. IF THE STRING OBJECT IS ALREADY PRESENT IN 'STRING CONSTANT POOL' THEN NEW OBJECT IS NOT CREATED INSTEAD THE VARIABLE START POINTING TO THE SAME OBJECT.
+
+3. STRING OBJECTS ARE IMMUTABLE. (i.e. IF WE TRY TO UPDATE STRING OBJECT A NEW OBJECT IS CREATED AND VARIABLE START POINTING TO THE NEWLY CREATED OBJECT.).
+
+
+
+CONSTRUCTORS OF STRING CLASS:-
+
+1. NO ARGUMENT CONSTRUCTOR : AN EMPTY STRING OBJ IS CREATED IN HEAP AREA
+
+2. String( STRING_LITERALS ) : A STRING OBJ IS CREATED WHICH STORES GIVEN STRING LITERALS.
+
+3. String ( CHAR [] ) : IT WILL CONVERT THE CHAR ARRAY TO STRING AND STORE IT INSIDE THE OBJECT.
+
+4. String ( BYTE ARRAY) : IT WILL CONVERT THE BYTE ARRAY TO CORRESPONDING CHARACTERS AND CREATE STRING OBJECT.
+
+5. String ( STRING_BUILDERS ) : IT WILL ACCEPT THE OBJECT OF STRINGBUILDER AND CREATE THE OBJECT OF STRING.
+
+6. String ( STRING_BUFFERS ) : IT WILL ACCEPT THE OBJECT OF STRINGBUFFER AND CREATE THE OBJECT OF STRING.
+
+
+
+
+
+[TRY IT:
+byte[] b = {70,100,65,97};
+String s1 = new String (b);
+System.out.println(s2);  // Output: FdAa]
+
+
+
+
+
+INBUILD METHODS OF A STRING:-
+
+1. toUpperCase( STRING )
+
+2. toLowerCase( STRING )
+
+3. concat ( STRING )  ------>> ex: String s = "HELLO";     System.out.println(s.concat("WORLD"));   // HELLOWORLD
+
+4. trim()
+
+5. subString ( INT_INDEX )
+
+6. subString ( START_INDEX, END_INDEX ) 
+
+7. charAt ( INT_INDEX )
+
+8. indexOf ( CHAR_CH )
+
+9. indexOf ( CHAR_CH , INT_START_INDEX )
+
+10. indexOf ( CHAR_SEQUENCE_STR )
+
+11. indexOf ( CHAR_SEQUENCE_STR , INT_START_INDEX )
+
+12. lastIndexOf ( CHAR_CH )
+
+13. length ()
+
+
+
+
+QUESTIONS: 
+
+1. Write a java program to store a String variable, reverse the String and print it
+
+2. Write a java program to store a sentence. Print only the first character of all the words.
+
+3. Take a char array and convert it to String and print it.
+
+4. Take a char String and convert it to char array without inbuilit method.
+
+5. Take a string input from user and count upper case, lower case, and numbers.
+
+6. Convert a string to upper case without using inbuilt methods.
+
+7. WAP to count number of words in a sentence.
+
+8. Take a string input and Count no of char present with even ascii value.
+
+9. Print first half of string in upper case and second half in lower case.
+
+10. Print user entered mobile number as first 4 digits will be in number and remaining
+    digits will be in Asterix e.g. (9360******)
+
+11. Print if the char is in odd index make it as lowercase and if the char is in even index then make it as uppercase.
+
+12. WAP to reverse a string.
+
+
+
+
+
+
+
